@@ -1,16 +1,29 @@
-# React + Vite
+# ☕ CafePOS Pro – Hệ thống bán hàng & quản lý kho cho quán cafe
+**Công nghệ:** React + Vite + TailwindCSS (Frontend) | Flask + MySQL (Backend) | OpenAI (Chatbot AI)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🎯 Giới thiệu
+CafePOS Pro là hệ thống POS (Point of Sale) hoàn chỉnh dành cho quán cafe, shop thời trang hoặc bất kỳ cửa hàng bán lẻ nào. Hệ thống giúp:
+- Bán hàng nhanh chóng tại quầy (giỏ hàng realtime, thanh toán, in bill)
+- Quản lý kho hàng (nhập/xuất, cảnh báo hết hàng)
+- Thống kê doanh thu đẹp mắt (biểu đồ Chart.js)
+- Chatbot AI hỗ trợ nhân viên (hỏi giá sản phẩm, tồn kho)
+- Phân quyền nhân viên (Quản lý / Thu ngân / Khách hàng)
 
-Currently, two official plugins are available:
+Dự án được thiết kế responsive, chạy mượt trên mobile/tablet/PC – giống hệt The Coffee House Admin!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tính năng chính (8 chức năng hoàn chỉnh)
+1. **Đăng nhập & Phân quyền** (JWT + bcrypt)
+2. **Bán hàng tại quầy** (Giỏ hàng, giảm giá, thanh toán)
+3. **Quản lý sản phẩm** (CRUD + upload ảnh)
+4. **Quản lý kho** (Nhập/xuất tồn, cảnh báo hết hàng)
+5. **Thống kê doanh thu** (Biểu đồ ngày/tuần/tháng)
+6. **In hóa đơn nhiệt** (PDF/Excel export)
+7. **Chatbot AI** (Tích hợp Grok/GPT-3.5)
+8. **Responsive & Deploy online** (Vercel + Railway)
 
-## React Compiler
+## 🛠️ Công nghệ stack
+- **Frontend:** React 18 + Vite + TailwindCSS + Axios + Chart.js
+- **Backend:** Python Flask + MySQL + JWT + Bcrypt
+- **AI:** OpenAI API (GPT-3.5-turbo)
+- **Khác:** Multer (upload file) + Nodemailer (email thông báo)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
